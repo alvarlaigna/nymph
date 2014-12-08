@@ -28,6 +28,8 @@
 				margin: 0 1em 1em 0;
 			}
 		</style>
+
+		<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/gist-embed/2.0/gist-embed.min.js"></script>
 	</head>
 	<body>
 
@@ -98,7 +100,7 @@
 			<header>
 				<div class="container">
 					<h2>Why Nymph</h2>
-					<p>Why would you want to use Nymph when it's so different than what you've been doing?</p>
+					<p>Why would you want to use Nymph when it's so different than what you've been doing for years?</p>
 				</div>
 			</header>
 			<div class="content dark style2">
@@ -122,6 +124,23 @@
 								fun. Less time spent crafting databases means more time spent building useful applications.</p>
 						</div>
 					</div>
+					<div class="row" id="better-than-sql">
+						<div class="12u">
+							<p>I like to think of <a href="https://github.com/sciactive/nymph/wiki/Entity-Querying">Nymph's query language</a> as a BTSQL (Better Than SQL) language, but you can decide for yourself:</p>
+							<div class="row">
+								<div class="6u">
+									<h3>Nymph Query from Frontend</h3>
+									<code data-gist-id="55935d42e01da53f8418"></code>
+									<p><em style="font-size: .8em;">No need for a specific endpoint here. Nymph uses the same endpoint for all client side queries.</em></p>
+								</div>
+								<div class="6u">
+									<h3>Equivalent SQL Query from Frontend</h3>
+									<code data-gist-id="a5766b1167b07424080f"></code>
+									<p><em style="font-size: .8em;">Without Nymph, every time you want a new type of query available on the frontend, you're going to need to either modify this endpoint or create a new one.</em></p>
+								</div>
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
 		</section>
@@ -131,8 +150,9 @@
 			<header>
 				<div class="container">
 					<h2>Feature Packed in a Small Size</h2>
-					<p>At less than 250KB, Nymph provides a ton of features, giving you the power you need for complex data
-						queries and fast data access.</p>
+					<p>At less than 250KB (and only 25KB in JS), Nymph provides a ton of features, giving you
+						<a href="https://github.com/sciactive/nymph/wiki/Entity-Querying">powerful queries</a>
+						and fast data access.</p>
 				</div>
 			</header>
 			<div class="content dark style3">
