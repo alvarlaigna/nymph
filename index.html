@@ -11,6 +11,7 @@
 		<meta property="og:site_name" content="Nymph" />
 		<meta property="fb:admins" content="508999194" />
 		<meta property="og:description" content="An object relational mapper for PHP and JavaScript." />
+		<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet" />
 		<link href="http://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,400,400italic" rel="stylesheet" type="text/css" />
 		<!--[if lte IE 8]><script src="css/ie/html5shiv.js"></script><![endif]-->
 		<script src="js/jquery.min.js"></script>
@@ -43,16 +44,34 @@
 				<a href="https://github.com/sciactive/nymph/releases" class="button scrolly" title="Download"><span style="font-size: 3em;" class="fa fa-download"></span></a>
 				<a href="https://github.com/sciactive/nymph" class="button scrolly" title="Nymph on GitHub"><span style="font-size: 3em;" class="fa fa-github"></span></a>
 			</footer>
+			<div class="arrow-indicator">
+				<i onclick="$('html, body').stop().animate({scrollTop: $('#header').outerHeight()}, 500);" class="fa fa-arrow-circle-down fa-5x"></i>
+			</div>
 		</section>
 
 		<!-- First -->
 		<section id="first" class="main">
-			<header>
+			<header id="demos">
 				<div class="container">
-					<h2>Object Relational Mapping in PHP and JavaScript</h2>
+					<h2>See It in Action</h2>
 					<p>Nymph lets you create, manipulate, save, and delete data objects from PHP and/or JavaScript with simple
-						querying and simple methods. Using Nymph, you can spend more time coding logic, and less time coding data
-						access.</p>
+						querying and simple methods. These demos use Nymph to save all their data, and all the querying is done
+						entirely on the client side.</p>
+					<p></p>
+					<table border="1" style="text-align: right; max-width: 600px; margin: 0 auto;">
+						<tbody>
+							<tr style="border-bottom: 1px solid #333;">
+								<td style="text-align: left;"><i class="fa fa-check-square-o"></i> ToDo App</td>
+								<td><i class="fa fa-arrow-circle-right"></i> <a href="http://nymph-demo.herokuapp.com/examples/todo/" target="_blank">See the Demo</a></td>
+								<td><i class="fa fa-cubes"></i> <a href="https://github.com/sciactive/nymph/tree/master/examples/todo" target="_blank">See the Source</a></td>
+							</tr>
+							<tr>
+								<td style="text-align: left;"><i class="fa fa-pencil-square-o"></i> Sudoku Game</td>
+								<td><i class="fa fa-arrow-circle-right"></i> <a href="http://nymph-demo.herokuapp.com/examples/sudoku/" target="_blank">See the Demo</a></td>
+								<td><i class="fa fa-cubes"></i> <a href="https://github.com/sciactive/nymph/tree/master/examples/sudoku" target="_blank">See the Source</a></td>
+							</tr>
+						</tbody>
+					</table>
 				</div>
 			</header>
 			<div class="content dark style1 featured">
