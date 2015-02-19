@@ -109,7 +109,12 @@
 						</div>
 						<div class="4u">
 							<section>
-								<span class="feature-icon"><span class="fa fa-refresh fa-spin"></span></span>
+								<span class="feature-icon"><span class="fa fa-refresh" id="rotateMe"></span></span>
+								<script type="text/javascript">
+									window.onscroll = function(){
+										document.getElementById("rotateMe").style.transform = "rotate("+(window.scrollY % 360)+"deg)";
+									};
+								</script>
 								<header>
 									<h3>Reactive</h3>
 								</header>
