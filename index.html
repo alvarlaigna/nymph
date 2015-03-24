@@ -38,12 +38,12 @@
 		<section id="header" class="dark">
 			<header>
 				<h1>Nymph</h1>
-				<p>Object relational mapper for PHP and JavaScript</p>
+				<p>Object relational mapper for collaborative web apps</p>
 			</header>
 			<footer>
 				<a href="https://github.com/sciactive/nymph" class="button scrolly" title="Nymph on GitHub"><span style="font-size: 3em;" class="fa fa-github"></span></a>
-				<a href="https://github.com/sciactive/nymph/wiki" class="button scrolly" title="Wiki"><span style="font-size: 3em;" class="fa fa-life-ring"></span></a>
-				<a href="api/server/" class="button scrolly" title="Server API"><span style="font-size: 3em;" class="fa fa-cubes"></span></a>
+				<a href="https://github.com/sciactive/nymph/wiki" class="button scrolly" title="Wiki Docs"><span style="font-size: 3em;" class="fa fa-graduation-cap"></span></a>
+				<a href="api/server/" class="button scrolly" title="Server API"><span style="font-size: 3em;" class="fa fa-cogs"></span></a>
 			</footer>
 			<div class="arrow-indicator">
 				<i onclick="$('html, body').stop().animate({scrollTop: $('#header').outerHeight()}, 500);" class="fa fa-arrow-circle-down fa-5x"></i>
@@ -57,10 +57,9 @@
 					<h2>See It in Action</h2>
 					<p>
 						These demos use Nymph, and all querying is done entirely
-						on the client side. They subscribe to their queries, and
-						Nymph publishes changes to them. Try opening the same
-						one in two windows, and see them react to each other's
-						changes.
+						on the client side with subscriptions. Try opening the
+						same one in two windows, and see one window react to
+						changes in the other.
 					</p>
 					<p></p>
 					<table border="1" style="text-align: right; max-width: 600px; margin: 0 auto;">
@@ -118,7 +117,7 @@
 								<header>
 									<h3>Reactive</h3>
 								</header>
-								<p>Nymph's publish/subscribe model makes it easy to build <strong>collaborative</strong> apps with many concurrent users.</p>
+								<p>Nymph's publish/subscribe server makes it easy to build <strong>collaborative</strong> apps with many concurrent users.</p>
 							</section>
 						</div>
 					</div>
@@ -181,7 +180,7 @@
 			<header>
 				<div class="container">
 					<h2>Feature Packed in a Small Size</h2>
-					<p>At less than 250KB (and only 25KB in JS), Nymph provides a ton of features, giving you
+					<p>At less than 250KB, Nymph provides a ton of features, giving you
 						<a href="https://github.com/sciactive/nymph/wiki/Entity-Querying">powerful queries</a>
 						and fast data access.</p>
 				</div>
@@ -191,13 +190,13 @@
 					<div class="row">
 						<div class="4u">
 							<section>
-								<h3>Out of the box features are best in class, at a fraction of the size of many competitors</h3>
+								<h3>Out of the box features are best in class, at a fraction of the size of other ORMs</h3>
 								<ul class="default">
-									<li>JavaScript promises for asynchronous access and easy error handling.</li>
+									<li>PubSub makes real time, collaborative apps easy.</li>
 									<li>On demand loading keeps database queries to a minimum.</li>
-									<li>Easy query syntax makes complex queries much more readable than equivalent SQL.</li>
-									<li>Equivalent PHP and JavaScript API makes coding for backend and frontend easy.</li>
-									<li>RequireJS and RequirePHP support allows dependency injection and service location.</li>
+									<li>Easy, object oriented query syntax.</li>
+									<li>Equivalent PHP and JavaScript API for backend and frontend.</li>
+									<li>RequireJS and RequirePHP for dependency injection and service location.</li>
 									<li>Horizontally scalable, for enormous databases.</li>
 								</ul>
 								<footer>
@@ -207,6 +206,7 @@
 						</div>
 						<div class="8u">
 							<div class="row no-collapse">
+								<!-- http://www.publicdomainpictures.net/view-image.php?image=72981&picture=hands-holding-jigsaw -->
 								<div class="6u"><a class="image full"><img src="images/pic01.jpg" alt="" /></a></div>
 								<div class="6u"><a class="image full"><img src="images/pic04.jpg" alt="" /></a></div>
 							</div>

@@ -130,7 +130,7 @@ Hunter Perrin for SciActive.</p>
 				Hunter Perrin <a href="&#x6d;&#x61;&#x69;&#x6c;&#x74;&#x6f;&#x3a;&#x68;&#x70;&#x65;&#x72;&#114;&#105;&#110;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;om">&#x68;&#x70;&#x65;&#x72;&#114;&#105;&#110;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;om</a><br>
 				<b>Link:</b>
 				<a href="http://nymph.io/">http://nymph.io/</a><br>
-			<b>Located at</b> <a href="source-class-Nymph.Nymph.html#15-429" title="Go to source code">src/Nymph.php</a>
+			<b>Located at</b> <a href="source-class-Nymph.Nymph.html#15-445" title="Go to source code">src/Nymph.php</a>
 		<br>
 	</div>
 
@@ -168,6 +168,57 @@ Hunter Perrin for SciActive.</p>
 		</div>
 		</div></td>
 	</tr>
+	<tr data-order="checkData" id="_checkData">
+
+		<td class="attributes"><code>
+			 public static
+
+			boolean
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_checkData">#</a>
+		<code><a href="source-class-Nymph.Nymph.html#35-49" title="Go to source code">checkData</a>( <span>array <var>&amp; $data</var></span>, <span>array <var>&amp; $sdata</var></span>, <span>array <var>$selectors</var></span>, <span>integer|null <var>$guid</var> = <span class="php-keyword1">null</span></span>, <span>array|null <var>$tags</var> = <span class="php-keyword1">null</span></span>, <span>array <var>$typesAlreadyChecked</var> = []</span>, <span>array <var>$dataValsAreadyChecked</var> = []</span> )</code>
+
+		<div class="description short">
+			<p>Check entity data to see if it matches given selectors.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Check entity data to see if it matches given selectors.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$data</var></dt>
+					<dd>An array of unserialized entity data. The data array should contain the cdate and mdate.</dd>
+					<dt><var>$sdata</var></dt>
+					<dd>An array of serialized entity data. If a value here is checked, it will be unserialized and placed in the $data array.</dd>
+					<dt><var>$selectors</var></dt>
+					<dd>An array of formatted selectors.</dd>
+					<dt><var>$guid</var></dt>
+					<dd>The guid. If left null, guid will not be checked, and automatically considered passing.</dd>
+					<dt><var>$tags</var></dt>
+					<dd>The tags array. If left null, tags will not be checked, and automatically considered passing.</dd>
+					<dt><var>$typesAlreadyChecked</var></dt>
+					<dd>An array of criteria types that have already been checked. They will be considered passing.</dd>
+					<dt><var>$dataValsAreadyChecked</var></dt>
+					<dd>An array of data values that have already been checked. They will be considered passing if the value is identical.</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					boolean<br>Whether the entity data passes the given selectors.
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
 	<tr data-order="deleteEntity" id="_deleteEntity">
 
 		<td class="attributes"><code>
@@ -180,7 +231,7 @@ Hunter Perrin for SciActive.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_deleteEntity">#</a>
-		<code><a href="source-class-Nymph.Nymph.html#35-43" title="Go to source code">deleteEntity</a>( <span><code><a href="class-Nymph.Entity.html">Nymph\Entity</a></code> <var>&amp; $entity</var></span> )</code>
+		<code><a href="source-class-Nymph.Nymph.html#51-59" title="Go to source code">deleteEntity</a>( <span><code><a href="class-Nymph.Entity.html">Nymph\Entity</a></code> <var>&amp; $entity</var></span> )</code>
 
 		<div class="description short">
 			<p>Delete an entity from the database.</p>
@@ -219,7 +270,7 @@ Hunter Perrin for SciActive.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_saveEntity">#</a>
-		<code><a href="source-class-Nymph.Nymph.html#45-59" title="Go to source code">saveEntity</a>( <span>mixed <var>&amp; $entity</var></span> )</code>
+		<code><a href="source-class-Nymph.Nymph.html#61-75" title="Go to source code">saveEntity</a>( <span>mixed <var>&amp; $entity</var></span> )</code>
 
 		<div class="description short">
 			<p>Save an entity to the database.</p>
@@ -264,7 +315,7 @@ microtime(true).</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_hsort">#</a>
-		<code><a href="source-class-Nymph.Nymph.html#61-75" title="Go to source code">hsort</a>( <span>array <var>&amp; $array</var></span>, <span>string|null <var>$property</var> = <span class="php-keyword1">null</span></span>, <span>string|null <var>$parent_property</var> = <span class="php-keyword1">null</span></span>, <span>boolean <var>$case_sensitive</var> = <span class="php-keyword1">false</span></span>, <span>boolean <var>$reverse</var> = <span class="php-keyword1">false</span></span> )</code>
+		<code><a href="source-class-Nymph.Nymph.html#77-91" title="Go to source code">hsort</a>( <span>array <var>&amp; $array</var></span>, <span>string|null <var>$property</var> = <span class="php-keyword1">null</span></span>, <span>string|null <var>$parent_property</var> = <span class="php-keyword1">null</span></span>, <span>boolean <var>$case_sensitive</var> = <span class="php-keyword1">false</span></span>, <span>boolean <var>$reverse</var> = <span class="php-keyword1">false</span></span> )</code>
 
 		<div class="description short">
 			<p>Sort an array of entities hierarchically by a specified property's value.</p>
@@ -310,7 +361,7 @@ $parent_property property must hold either null, or the entity's parent.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_psort">#</a>
-		<code><a href="source-class-Nymph.Nymph.html#77-91" title="Go to source code">psort</a>( <span>array <var>&amp; $array</var></span>, <span>string|null <var>$property</var> = <span class="php-keyword1">null</span></span>, <span>string|null <var>$parent_property</var> = <span class="php-keyword1">null</span></span>, <span>boolean <var>$case_sensitive</var> = <span class="php-keyword1">false</span></span>, <span>boolean <var>$reverse</var> = <span class="php-keyword1">false</span></span> )</code>
+		<code><a href="source-class-Nymph.Nymph.html#93-107" title="Go to source code">psort</a>( <span>array <var>&amp; $array</var></span>, <span>string|null <var>$property</var> = <span class="php-keyword1">null</span></span>, <span>string|null <var>$parent_property</var> = <span class="php-keyword1">null</span></span>, <span>boolean <var>$case_sensitive</var> = <span class="php-keyword1">false</span></span>, <span>boolean <var>$reverse</var> = <span class="php-keyword1">false</span></span> )</code>
 
 		<div class="description short">
 			<p>Sort an array of entities by parent and a specified property's value.</p>
@@ -356,7 +407,7 @@ properties.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_sort">#</a>
-		<code><a href="source-class-Nymph.Nymph.html#93-103" title="Go to source code">sort</a>( <span>array <var>&amp; $array</var></span>, <span>string|null <var>$property</var> = <span class="php-keyword1">null</span></span>, <span>boolean <var>$case_sensitive</var> = <span class="php-keyword1">false</span></span>, <span>boolean <var>$reverse</var> = <span class="php-keyword1">false</span></span> )</code>
+		<code><a href="source-class-Nymph.Nymph.html#109-119" title="Go to source code">sort</a>( <span>array <var>&amp; $array</var></span>, <span>string|null <var>$property</var> = <span class="php-keyword1">null</span></span>, <span>boolean <var>$case_sensitive</var> = <span class="php-keyword1">false</span></span>, <span>boolean <var>$reverse</var> = <span class="php-keyword1">false</span></span> )</code>
 
 		<div class="description short">
 			<p>Sort an array of entities by a specified property's value.</p>
@@ -397,7 +448,7 @@ properties.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_formatSelectors">#</a>
-		<code><a href="source-class-Nymph.Nymph.html#105-128" title="Go to source code">formatSelectors</a>( <span>array <var>&amp; $selectors</var></span> )</code>
+		<code><a href="source-class-Nymph.Nymph.html#121-144" title="Go to source code">formatSelectors</a>( <span>array <var>&amp; $selectors</var></span> )</code>
 
 		<div class="description short">
 			<p>Make all selectors in the format:</p>
@@ -435,7 +486,7 @@ properties.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_connect">#</a>
-		<code><a href="source-class-Nymph.Nymph.html#132-139" title="Go to source code">connect</a>( )</code>
+		<code><a href="source-class-Nymph.Nymph.html#148-155" title="Go to source code">connect</a>( )</code>
 
 		<div class="description short">
 			<p>Connect to the database.</p>
@@ -469,7 +520,7 @@ properties.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_deleteEntityByID">#</a>
-		<code><a href="source-class-Nymph.Nymph.html#140-148" title="Go to source code">deleteEntityByID</a>( <span>integer <var>$guid</var></span> )</code>
+		<code><a href="source-class-Nymph.Nymph.html#156-164" title="Go to source code">deleteEntityByID</a>( <span>integer <var>$guid</var></span> )</code>
 
 		<div class="description short">
 			<p>Delete an entity by its GUID.</p>
@@ -508,7 +559,7 @@ properties.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_deleteUID">#</a>
-		<code><a href="source-class-Nymph.Nymph.html#149-157" title="Go to source code">deleteUID</a>( <span>string <var>$name</var></span> )</code>
+		<code><a href="source-class-Nymph.Nymph.html#165-173" title="Go to source code">deleteUID</a>( <span>string <var>$name</var></span> )</code>
 
 		<div class="description short">
 			<p>Delete a unique ID.</p>
@@ -547,7 +598,7 @@ properties.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_disconnect">#</a>
-		<code><a href="source-class-Nymph.Nymph.html#158-165" title="Go to source code">disconnect</a>( )</code>
+		<code><a href="source-class-Nymph.Nymph.html#174-181" title="Go to source code">disconnect</a>( )</code>
 
 		<div class="description short">
 			<p>Disconnect from the database.</p>
@@ -581,7 +632,7 @@ properties.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_export">#</a>
-		<code><a href="source-class-Nymph.Nymph.html#166-201" title="Go to source code">export</a>( <span>string <var>$filename</var></span> )</code>
+		<code><a href="source-class-Nymph.Nymph.html#182-217" title="Go to source code">export</a>( <span>string <var>$filename</var></span> )</code>
 
 		<div class="description short">
 			<p>Export entities to a local file.</p>
@@ -645,7 +696,7 @@ properties.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_exportPrint">#</a>
-		<code><a href="source-class-Nymph.Nymph.html#202-209" title="Go to source code">exportPrint</a>( )</code>
+		<code><a href="source-class-Nymph.Nymph.html#218-225" title="Go to source code">exportPrint</a>( )</code>
 
 		<div class="description short">
 			<p>Export entities to the client as a downloadable file.</p>
@@ -679,7 +730,7 @@ properties.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getEntities">#</a>
-		<code><a href="source-class-Nymph.Nymph.html#210-343" title="Go to source code">getEntities</a>( <span>array <var>$options</var></span>, <span>array <var>$selector</var>,…</span> )</code>
+		<code><a href="source-class-Nymph.Nymph.html#226-359" title="Go to source code">getEntities</a>( <span>array <var>$options</var></span>, <span>array <var>$selector</var>,…</span> )</code>
 
 		<div class="description short">
 			<p>Get an array of entities.</p>
@@ -829,7 +880,7 @@ point, such as "!isset".</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getEntity">#</a>
-		<code><a href="source-class-Nymph.Nymph.html#344-360" title="Go to source code">getEntity</a>( <span>array <var>$options</var></span>, <span>array <var>$selector</var>,…</span> )</code>
+		<code><a href="source-class-Nymph.Nymph.html#360-376" title="Go to source code">getEntity</a>( <span>array <var>$options</var></span>, <span>array <var>$selector</var>,…</span> )</code>
 
 		<div class="description short">
 			<p>Get the first entity to match all options/selectors.</p>
@@ -876,7 +927,7 @@ getEntities() would return an empty array.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getUID">#</a>
-		<code><a href="source-class-Nymph.Nymph.html#361-369" title="Go to source code">getUID</a>( <span>string <var>$name</var></span> )</code>
+		<code><a href="source-class-Nymph.Nymph.html#377-385" title="Go to source code">getUID</a>( <span>string <var>$name</var></span> )</code>
 
 		<div class="description short">
 			<p>Get the current value of a unique ID.</p>
@@ -915,7 +966,7 @@ getEntities() would return an empty array.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_import">#</a>
-		<code><a href="source-class-Nymph.Nymph.html#370-378" title="Go to source code">import</a>( <span>string <var>$filename</var></span> )</code>
+		<code><a href="source-class-Nymph.Nymph.html#386-394" title="Go to source code">import</a>( <span>string <var>$filename</var></span> )</code>
 
 		<div class="description short">
 			<p>Import entities from a file.</p>
@@ -954,7 +1005,7 @@ getEntities() would return an empty array.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_newUID">#</a>
-		<code><a href="source-class-Nymph.Nymph.html#379-408" title="Go to source code">newUID</a>( <span>string <var>$name</var></span> )</code>
+		<code><a href="source-class-Nymph.Nymph.html#395-424" title="Go to source code">newUID</a>( <span>string <var>$name</var></span> )</code>
 
 		<div class="description short">
 			<p>Increment or create a unique ID and return the new value.</p>
@@ -1014,7 +1065,7 @@ returned.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_renameUID">#</a>
-		<code><a href="source-class-Nymph.Nymph.html#409-418" title="Go to source code">renameUID</a>( <span>string <var>$old_name</var></span>, <span>string <var>$new_name</var></span> )</code>
+		<code><a href="source-class-Nymph.Nymph.html#425-434" title="Go to source code">renameUID</a>( <span>string <var>$old_name</var></span>, <span>string <var>$new_name</var></span> )</code>
 
 		<div class="description short">
 			<p>Rename a unique ID.</p>
@@ -1055,7 +1106,7 @@ returned.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_setUID">#</a>
-		<code><a href="source-class-Nymph.Nymph.html#419-428" title="Go to source code">setUID</a>( <span>string <var>$name</var></span>, <span>integer <var>$value</var></span> )</code>
+		<code><a href="source-class-Nymph.Nymph.html#435-444" title="Go to source code">setUID</a>( <span>string <var>$name</var></span>, <span>integer <var>$value</var></span> )</code>
 
 		<div class="description short">
 			<p>Set the value of a UID.</p>
@@ -1115,7 +1166,7 @@ returned.</p>
 		<td class="value">
 			<div>
 				<a href="#VERSION" class="anchor">#</a>
-				<code><span class="php-quote">'1.4.0-beta.2'</span></code>
+				<code><span class="php-quote">'1.4.0-beta.4'</span></code>
 			</div>
 		</td>
 	</tr>

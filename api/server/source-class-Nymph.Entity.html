@@ -748,7 +748,7 @@
 </span><span id="649" class="l"><a href="#649">649: </a>        }
 </span><span id="650" class="l"><a href="#650">650: </a>    }
 </span><span id="651" class="l"><a href="#651">651: </a>
-</span><span id="652" class="l"><a href="#652">652: </a>    <span class="php-keyword1">public</span> <span class="php-keyword1">function</span> jsonSerialize() {
+</span><span id="652" class="l"><a href="#652">652: </a>    <span class="php-keyword1">public</span> <span class="php-keyword1">function</span> jsonSerialize(<span class="php-var">$clientClassName</span> = <span class="php-keyword1">true</span>) {
 </span><span id="653" class="l"><a href="#653">653: </a>        <span class="php-var">$object</span> = (object) [];
 </span><span id="654" class="l"><a href="#654">654: </a>        <span class="php-keyword1">if</span> (<span class="php-var">$this</span>-&gt;isASleepingReference) {
 </span><span id="655" class="l"><a href="#655">655: </a>            <span class="php-keyword1">return</span> <span class="php-var">$this</span>-&gt;sleepingReference;
@@ -788,7 +788,7 @@
 </span><span id="689" class="l"><a href="#689">689: </a>                <span class="php-var">$object</span>-&gt;data[<span class="php-var">$key</span>] = <span class="php-keyword2">unserialize</span>(<span class="php-var">$val</span>);
 </span><span id="690" class="l"><a href="#690">690: </a>            }
 </span><span id="691" class="l"><a href="#691">691: </a>        }
-</span><span id="692" class="l"><a href="#692">692: </a>        <span class="php-var">$object</span>-&gt;<span class="php-keyword1">class</span> = <span class="php-keyword1">isset</span>(<span class="php-var">$this</span>-&gt;clientClassName) ? <span class="php-var">$this</span>-&gt;clientClassName : <span class="php-keyword2">get_class</span>(<span class="php-var">$this</span>);
+</span><span id="692" class="l"><a href="#692">692: </a>        <span class="php-var">$object</span>-&gt;<span class="php-keyword1">class</span> = (<span class="php-var">$clientClassName</span> &amp;&amp; <span class="php-keyword1">isset</span>(<span class="php-var">$this</span>-&gt;clientClassName)) ? <span class="php-var">$this</span>-&gt;clientClassName : <span class="php-keyword2">get_class</span>(<span class="php-var">$this</span>);
 </span><span id="693" class="l"><a href="#693">693: </a>        <span class="php-keyword1">return</span> <span class="php-var">$object</span>;
 </span><span id="694" class="l"><a href="#694">694: </a>    }
 </span><span id="695" class="l"><a href="#695">695: </a>
