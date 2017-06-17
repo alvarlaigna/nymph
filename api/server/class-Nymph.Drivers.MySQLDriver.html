@@ -5,7 +5,7 @@
 
 	<title>Class Nymph\Drivers\MySQLDriver | Nymph Server API</title>
 
-	<link rel="stylesheet" href="resources/style.css?e99947befd7bf673c6b43ff75e9e0f170c88a60e">
+	<link rel="stylesheet" href="resources/style.css?c2f33731c1948fbed7c333554678bfa68d4817da">
 
 </head>
 
@@ -35,11 +35,6 @@
 
 						</li>
 							</ul></li>
-				<li>
-					<a href="namespace-None.html">
-						None					</a>
-
-						</li>
 			</ul>
 		</div>
 
@@ -135,12 +130,12 @@
 				<b>Copyright:</b>
 				SciActive.com<br>
 				<b>License:</b>
-				<a href="http://www.gnu.org/licenses/lgpl.html">http://www.gnu.org/licenses/lgpl.html</a><br>
+				<a href="https://www.apache.org/licenses/LICENSE-2.0">https://www.apache.org/licenses/LICENSE-2.0</a><br>
 				<b>Author:</b>
 				Hunter Perrin <a href="&#x6d;&#x61;&#x69;&#x6c;&#x74;&#x6f;&#x3a;&#x68;&#x70;&#x65;&#x72;&#114;&#105;&#110;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;om">&#x68;&#x70;&#x65;&#x72;&#114;&#105;&#110;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;om</a><br>
 				<b>Link:</b>
 				<a href="http://nymph.io/">http://nymph.io/</a><br>
-			<b>Located at</b> <a href="source-class-Nymph.Drivers.MySQLDriver.html#4-1056" title="Go to source code">src/Drivers/MySQLDriver.php</a>
+			<b>Located at</b> <a href="source-class-Nymph.Drivers.MySQLDriver.html#5-1491" title="Go to source code">src/Drivers/MySQLDriver.php</a>
 		<br>
 	</div>
 
@@ -160,7 +155,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#___construct">#</a>
-		<code><a href="source-class-Nymph.Drivers.MySQLDriver.html#26-29" title="Go to source code">__construct</a>( <span> <var>$NymphConfig</var></span> )</code>
+		<code><a href="source-class-Nymph.Drivers.MySQLDriver.html#27-30" title="Go to source code">__construct</a>( <span> <var>$NymphConfig</var></span> )</code>
 
 		<div class="description short">
 			
@@ -190,7 +185,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#___destruct">#</a>
-		<code><a href="source-class-Nymph.Drivers.MySQLDriver.html#31-36" title="Go to source code">__destruct</a>( )</code>
+		<code><a href="source-class-Nymph.Drivers.MySQLDriver.html#32-37" title="Go to source code">__destruct</a>( )</code>
 
 		<div class="description short">
 			<p>Disconnect from the database on destruction.</p>
@@ -220,7 +215,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_connect">#</a>
-		<code><a href="source-class-Nymph.Drivers.MySQLDriver.html#38-67" title="Go to source code">connect</a>( )</code>
+		<code><a href="source-class-Nymph.Drivers.MySQLDriver.html#39-85" title="Go to source code">connect</a>( )</code>
 
 		<div class="description short">
 			<p>Connect to the MySQL database.</p>
@@ -233,7 +228,8 @@
 
 				<h4>Returns</h4>
 				<div class="list">
-					boolean<br>Whether this instance is connected to a MySQL database after the method has run.
+					boolean<br><p>Whether this instance is connected to a MySQL database after
+             the method has run.</p>
 				</div>
 
 
@@ -256,7 +252,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_disconnect">#</a>
-		<code><a href="source-class-Nymph.Drivers.MySQLDriver.html#69-83" title="Go to source code">disconnect</a>( )</code>
+		<code><a href="source-class-Nymph.Drivers.MySQLDriver.html#87-102" title="Go to source code">disconnect</a>( )</code>
 
 		<div class="description short">
 			<p>Disconnect from the MySQL database.</p>
@@ -269,7 +265,8 @@
 
 				<h4>Returns</h4>
 				<div class="list">
-					boolean<br>Whether this instance is connected to a MySQL database after the method has run.
+					boolean<br><p>Whether this instance is connected to a MySQL database after
+             the method has run.</p>
 				</div>
 
 
@@ -292,7 +289,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_deleteEntityByID">#</a>
-		<code><a href="source-class-Nymph.Drivers.MySQLDriver.html#125-134" title="Go to source code">deleteEntityByID</a>( <span> <var>$guid</var></span>, <span> <var>$etype</var> = <span class="php-keyword1">null</span></span> )</code>
+		<code><a href="source-class-Nymph.Drivers.MySQLDriver.html#159-168" title="Go to source code">deleteEntityByID</a>( <span> <var>$guid</var></span>, <span> <var>$etype</var> = <span class="php-keyword1">null</span></span> )</code>
 
 		<div class="description short">
 			
@@ -324,7 +321,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_deleteUID">#</a>
-		<code><a href="source-class-Nymph.Drivers.MySQLDriver.html#136-142" title="Go to source code">deleteUID</a>( <span> <var>$name</var></span> )</code>
+		<code><a href="source-class-Nymph.Drivers.MySQLDriver.html#170-176" title="Go to source code">deleteUID</a>( <span> <var>$name</var></span> )</code>
 
 		<div class="description short">
 			
@@ -356,7 +353,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_export">#</a>
-		<code><a href="source-class-Nymph.Drivers.MySQLDriver.html#144-210" title="Go to source code">export</a>( <span> <var>$filename</var></span> )</code>
+		<code><a href="source-class-Nymph.Drivers.MySQLDriver.html#178-249" title="Go to source code">export</a>( <span> <var>$filename</var></span> )</code>
 
 		<div class="description short">
 			
@@ -388,7 +385,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_exportPrint">#</a>
-		<code><a href="source-class-Nymph.Drivers.MySQLDriver.html#212-279" title="Go to source code">exportPrint</a>( )</code>
+		<code><a href="source-class-Nymph.Drivers.MySQLDriver.html#251-321" title="Go to source code">exportPrint</a>( )</code>
 
 		<div class="description short">
 			
@@ -420,7 +417,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getEntities">#</a>
-		<code><a href="source-class-Nymph.Drivers.MySQLDriver.html#673-791" title="Go to source code">getEntities</a>( )</code>
+		<code><a href="source-class-Nymph.Drivers.MySQLDriver.html#983-1142" title="Go to source code">getEntities</a>( <span> <var>$options</var></span>, <span> <var>$selectors</var></span> )</code>
 
 		<div class="description short">
 			
@@ -452,7 +449,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getUID">#</a>
-		<code><a href="source-class-Nymph.Drivers.MySQLDriver.html#793-801" title="Go to source code">getUID</a>( <span> <var>$name</var></span> )</code>
+		<code><a href="source-class-Nymph.Drivers.MySQLDriver.html#1144-1154" title="Go to source code">getUID</a>( <span> <var>$name</var></span> )</code>
 
 		<div class="description short">
 			
@@ -484,7 +481,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_import">#</a>
-		<code><a href="source-class-Nymph.Drivers.MySQLDriver.html#803-895" title="Go to source code">import</a>( <span> <var>$filename</var></span> )</code>
+		<code><a href="source-class-Nymph.Drivers.MySQLDriver.html#1156-1276" title="Go to source code">import</a>( <span> <var>$filename</var></span> )</code>
 
 		<div class="description short">
 			
@@ -516,7 +513,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_newUID">#</a>
-		<code><a href="source-class-Nymph.Drivers.MySQLDriver.html#897-908" title="Go to source code">newUID</a>( <span> <var>$name</var></span> )</code>
+		<code><a href="source-class-Nymph.Drivers.MySQLDriver.html#1278-1291" title="Go to source code">newUID</a>( <span> <var>$name</var></span> )</code>
 
 		<div class="description short">
 			
@@ -548,7 +545,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_renameUID">#</a>
-		<code><a href="source-class-Nymph.Drivers.MySQLDriver.html#910-916" title="Go to source code">renameUID</a>( <span> <var>$old_name</var></span>, <span> <var>$new_name</var></span> )</code>
+		<code><a href="source-class-Nymph.Drivers.MySQLDriver.html#1293-1301" title="Go to source code">renameUID</a>( <span> <var>$oldName</var></span>, <span> <var>$newName</var></span> )</code>
 
 		<div class="description short">
 			
@@ -580,7 +577,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_saveEntity">#</a>
-		<code><a href="source-class-Nymph.Drivers.MySQLDriver.html#918-1039" title="Go to source code">saveEntity</a>( <span> <var>&amp; $entity</var></span> )</code>
+		<code><a href="source-class-Nymph.Drivers.MySQLDriver.html#1303-1472" title="Go to source code">saveEntity</a>( <span> <var>&amp; $entity</var></span> )</code>
 
 		<div class="description short">
 			
@@ -612,7 +609,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_setUID">#</a>
-		<code><a href="source-class-Nymph.Drivers.MySQLDriver.html#1041-1047" title="Go to source code">setUID</a>( <span> <var>$name</var></span>, <span> <var>$value</var></span> )</code>
+		<code><a href="source-class-Nymph.Drivers.MySQLDriver.html#1474-1482" title="Go to source code">setUID</a>( <span> <var>$name</var></span>, <span> <var>$value</var></span> )</code>
 
 		<div class="description short">
 			
@@ -659,7 +656,7 @@
 			<a href="class-Nymph.Drivers.DriverTrait.html#_getEntity">getEntity()</a>, 
 			<a href="class-Nymph.Drivers.DriverTrait.html#_hsort">hsort()</a>, 
 			<a href="class-Nymph.Drivers.DriverTrait.html#_psort">psort()</a>, 
-			<a href="class-Nymph.Drivers.DriverTrait.html#_pull_cache">pull_cache()</a>, 
+			<a href="class-Nymph.Drivers.DriverTrait.html#_pullCache">pullCache()</a>, 
 			<a href="class-Nymph.Drivers.DriverTrait.html#_pushCache">pushCache()</a>, 
 			<a href="class-Nymph.Drivers.DriverTrait.html#_sort">sort()</a>, 
 			<a href="class-Nymph.Drivers.DriverTrait.html#_sortProperty">sortProperty()</a>

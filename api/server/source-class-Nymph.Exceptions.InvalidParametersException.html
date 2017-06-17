@@ -6,7 +6,7 @@
 
 	<title>File src/Exceptions/InvalidParametersException.php | Nymph Server API</title>
 
-	<link rel="stylesheet" href="resources/style.css?e99947befd7bf673c6b43ff75e9e0f170c88a60e">
+	<link rel="stylesheet" href="resources/style.css?c2f33731c1948fbed7c333554678bfa68d4817da">
 
 </head>
 
@@ -36,11 +36,6 @@
 
 						</li>
 							</ul></li>
-				<li>
-					<a href="namespace-None.html">
-						None					</a>
-
-						</li>
 			</ul>
 		</div>
 
@@ -50,17 +45,35 @@
 		<div id="elements">
 			<h3>Classes</h3>
 			<ul>
-				<li><a href="class-EntityTest.html">EntityTest</a></li>
-				<li><a href="class-QueriesPostgresTest.html">QueriesPostgresTest</a></li>
-				<li><a href="class-QueriesTest.html">QueriesTest</a></li>
-				<li><a href="class-SortingTest.html">SortingTest</a></li>
-				<li><a href="class-TestModel.html">TestModel</a></li>
-				<li><a href="class-UIDPostgresTest.html">UIDPostgresTest</a></li>
-				<li><a href="class-UIDTest.html">UIDTest</a></li>
+				<li><a href="class-Nymph.Drivers.MySQLDriver.html">Nymph\Drivers\MySQLDriver</a></li>
+				<li><a href="class-Nymph.Drivers.PostgreSQLDriver.html">Nymph\Drivers\PostgreSQLDriver</a></li>
+				<li><a href="class-Nymph.Entity.html">Nymph\Entity</a></li>
+				<li><a href="class-Nymph.Nymph.html">Nymph\Nymph</a></li>
+				<li><a href="class-Nymph.REST.html">Nymph\REST</a></li>
 			</ul>
 
+			<h3>Interfaces</h3>
+			<ul>
+				<li><a href="class-Nymph.DataObjectInterface.html">Nymph\DataObjectInterface</a></li>
+				<li><a href="class-Nymph.Drivers.DriverInterface.html">Nymph\Drivers\DriverInterface</a></li>
+				<li><a href="class-Nymph.EntityInterface.html">Nymph\EntityInterface</a></li>
+			</ul>
 
+			<h3>Traits</h3>
+			<ul>
+				<li><a href="class-Nymph.Drivers.DriverTrait.html">Nymph\Drivers\DriverTrait</a></li>
+			</ul>
 
+			<h3>Exceptions</h3>
+			<ul>
+				<li><a href="class-Nymph.Exceptions.EntityClassNotFoundException.html">Nymph\Exceptions\EntityClassNotFoundException</a></li>
+				<li><a href="class-Nymph.Exceptions.EntityCorruptedException.html">Nymph\Exceptions\EntityCorruptedException</a></li>
+				<li><a href="class-Nymph.Exceptions.EntityInvalidDataException.html">Nymph\Exceptions\EntityInvalidDataException</a></li>
+				<li><a href="class-Nymph.Exceptions.InvalidParametersException.html">Nymph\Exceptions\InvalidParametersException</a></li>
+				<li><a href="class-Nymph.Exceptions.NotConfiguredException.html">Nymph\Exceptions\NotConfiguredException</a></li>
+				<li><a href="class-Nymph.Exceptions.QueryFailedException.html">Nymph\Exceptions\QueryFailedException</a></li>
+				<li><a href="class-Nymph.Exceptions.UnableToConnectException.html">Nymph\Exceptions\UnableToConnectException</a></li>
+			</ul>
 
 
 		</div>
@@ -85,8 +98,7 @@
 			<li>
 <span>Namespace</span>			</li>
 			<li>
-				<a href="class-Nymph.Exceptions.UnableToConnectException.html" title="Summary of Nymph\Exceptions\UnableToConnectException"><span>Class</span></a>
-			</li>
+<span>Class</span>			</li>
 		</ul>
 		<ul>
 			<li>
@@ -97,26 +109,29 @@
 		</ul>
 	</div>
 
-<pre><code><span id="1" class="l"><a href="#1"> 1: </a><span class="xlang">&lt;?php</span> <span class="php-keyword1">namespace</span> Nymph\Exceptions;
-</span><span id="2" class="l"><a href="#2"> 2: </a>
-</span><span id="3" class="l"><a href="#3"> 3: </a><span class="php-comment">/**
-</span></span><span id="4" class="l"><a href="#4"> 4: </a><span class="php-comment"> * InvalidParametersException exception.
-</span></span><span id="5" class="l"><a href="#5"> 5: </a><span class="php-comment"> *
-</span></span><span id="6" class="l"><a href="#6"> 6: </a><span class="php-comment"> * @package Nymph
-</span></span><span id="7" class="l"><a href="#7"> 7: </a><span class="php-comment"> * @license http://www.gnu.org/licenses/lgpl.html
-</span></span><span id="8" class="l"><a href="#8"> 8: </a><span class="php-comment"> * @author Hunter Perrin &lt;hperrin@gmail.com&gt;
-</span></span><span id="9" class="l"><a href="#9"> 9: </a><span class="php-comment"> * @copyright SciActive.com
-</span></span><span id="10" class="l"><a href="#10">10: </a><span class="php-comment"> * @link http://nymph.io/
-</span></span><span id="11" class="l"><a href="#11">11: </a><span class="php-comment"> */</span>
-</span><span id="12" class="l"><a href="#12">12: </a><span class="php-keyword1">class</span> InvalidParametersException <span class="php-keyword1">extends</span> \InvalidArgumentException {}
-</span><span id="13" class="l"><a href="#13">13: </a></span></code></pre>
+<pre class="numbers"><code><span class="l"><a href="#1"> 1: </a></span><span class="l"><a href="#2"> 2: </a></span><span class="l"><a href="#3"> 3: </a></span></span><span class="l"><a href="#4"> 4: </a></span></span><span class="l"><a href="#5"> 5: </a></span></span><span class="l"><a href="#6"> 6: </a></span></span><span class="l"><a href="#7"> 7: </a></span></span><span class="l"><a href="#8"> 8: </a></span></span><span class="l"><a href="#9"> 9: </a></span></span><span class="l"><a href="#10">10: </a></span></span><span class="l"><a href="#11">11: </a></span></span><span class="l"><a href="#12">12: </a></span></span><span class="l"><a href="#13">13: </a></span><span class="l"><a href="#14">14: </a></span><span class="l"><a href="#15">15: </a></span></code></pre>
+<pre class="code"><code><span id="1" class="l"><span class="xlang">&lt;?php</span> <span class="php-keyword1">namespace</span> Nymph\Exceptions;
+</span><span id="2" class="l">
+</span><span id="3" class="l"><span class="php-comment">/**
+</span></span><span id="4" class="l"><span class="php-comment"> * InvalidParametersException exception.
+</span></span><span id="5" class="l"><span class="php-comment"> *
+</span></span><span id="6" class="l"><span class="php-comment"> * This exception is thrown when a method is called with invalid parameters.
+</span></span><span id="7" class="l"><span class="php-comment"> *
+</span></span><span id="8" class="l"><span class="php-comment"> * @package Nymph
+</span></span><span id="9" class="l"><span class="php-comment"> * @license https://www.apache.org/licenses/LICENSE-2.0
+</span></span><span id="10" class="l"><span class="php-comment"> * @author Hunter Perrin &lt;hperrin@gmail.com&gt;
+</span></span><span id="11" class="l"><span class="php-comment"> * @copyright SciActive.com
+</span></span><span id="12" class="l"><span class="php-comment"> * @link http://nymph.io/
+</span></span><span id="13" class="l"><span class="php-comment"> */</span>
+</span><span id="14" class="l"><span class="php-keyword1">class</span> InvalidParametersException <span class="php-keyword1">extends</span> \InvalidArgumentException {}
+</span><span id="15" class="l"></span></code></pre>
 
 	<div id="footer">
 		Nymph Server API API documentation generated by <a href="http://apigen.org">ApiGen</a>
 	</div>
 </div>
 </div>
-<script src="resources/combined.js?44e93de8fc3b749f55d0fae2da59a38c45b15f0b"></script>
-<script src="elementlist.js?a1bde68e9857324636f110a3fa69dec4a86bd898"></script>
+<script src="resources/combined.js?1995b0ea18dfc0e6d7bb63320fc915f2e7b5363f"></script>
+<script src="elementlist.js?e4f3dc3d0ba94f5f743d8c81817f3aec4c442539"></script>
 </body>
 </html>

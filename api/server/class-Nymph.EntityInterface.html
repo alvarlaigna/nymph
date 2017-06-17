@@ -5,7 +5,7 @@
 
 	<title>Interface Nymph\EntityInterface | Nymph Server API</title>
 
-	<link rel="stylesheet" href="resources/style.css?e99947befd7bf673c6b43ff75e9e0f170c88a60e">
+	<link rel="stylesheet" href="resources/style.css?c2f33731c1948fbed7c333554678bfa68d4817da">
 
 </head>
 
@@ -35,11 +35,6 @@
 
 						</li>
 							</ul></li>
-				<li>
-					<a href="namespace-None.html">
-						None					</a>
-
-						</li>
 			</ul>
 		</div>
 
@@ -125,10 +120,6 @@
 			<a href="class-Nymph.Entity.html">Nymph\Entity</a>
 	</div>
 
-	<div>
-		<h4>Indirect known implementers</h4>
-			<a href="class-TestModel.html">TestModel</a>
-	</div>
 
 
 
@@ -138,7 +129,7 @@
 		<b>Namespace:</b> <a href="namespace-Nymph.html">Nymph</a><br>
 		<b>Package:</b> Nymph<br>
 
-			<b>Located at</b> <a href="source-class-Nymph.EntityInterface.html#12-101" title="Go to source code">src/EntityInterface.php</a>
+			<b>Located at</b> <a href="source-class-Nymph.EntityInterface.html#13-111" title="Go to source code">src/EntityInterface.php</a>
 		<br>
 	</div>
 
@@ -151,14 +142,14 @@
 		<td class="attributes"><code>
 			 public 
 
-			
+			<code><a href="class-Nymph.Entity.html">Nymph\Entity</a></code>|null
 			
 			</code>
 		</td>
 
 		<td class="name"><div>
 		<a class="anchor" href="#___construct">#</a>
-		<code><a href="source-class-Nymph.EntityInterface.html#21-25" title="Go to source code">__construct</a>( <span>integer <var>$id</var> = <span class="php-num">0</span></span> )</code>
+		<code><a href="source-class-Nymph.EntityInterface.html#21-27" title="Go to source code">__construct</a>( <span>integer <var>$id</var> = <span class="php-num">0</span></span> )</code>
 
 		<div class="description short">
 			<p>Load an entity.</p>
@@ -174,6 +165,10 @@
 					<dd>The ID of the entity to load, 0 for a new entity.</dd>
 				</dl></div>
 
+				<h4>Returns</h4>
+				<div class="list">
+					<code><a href="class-Nymph.Entity.html">Nymph\Entity</a></code>|null
+				</div>
 
 
 
@@ -193,7 +188,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_factory">#</a>
-		<code><a href="source-class-Nymph.EntityInterface.html#26-30" title="Go to source code">factory</a>( )</code>
+		<code><a href="source-class-Nymph.EntityInterface.html#28-33" title="Go to source code">factory</a>( )</code>
 
 		<div class="description short">
 			<p>Create a new instance.</p>
@@ -215,6 +210,41 @@
 		</div>
 		</div></td>
 	</tr>
+	<tr data-order="useSkipAc" id="_useSkipAc">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_useSkipAc">#</a>
+		<code><a href="source-class-Nymph.EntityInterface.html#34-39" title="Go to source code">useSkipAc</a>( <span>boolean <var>$useSkipAc</var></span> )</code>
+
+		<div class="description short">
+			<p>Set whether to use "skip_ac" when accessing entity references.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Set whether to use "skip_ac" when accessing entity references.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$useSkipAc</var></dt>
+					<dd>True or false, whether to use it.</dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
 	<tr data-order="addTag" id="_addTag">
 
 		<td class="attributes"><code>
@@ -227,7 +257,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_addTag">#</a>
-		<code><a href="source-class-Nymph.EntityInterface.html#31-36" title="Go to source code">addTag</a>( )</code>
+		<code><a href="source-class-Nymph.EntityInterface.html#40-45" title="Go to source code">addTag</a>( )</code>
 
 		<div class="description short">
 			<p>Add one or more tags.</p>
@@ -257,7 +287,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_clearCache">#</a>
-		<code><a href="source-class-Nymph.EntityInterface.html#37-43" title="Go to source code">clearCache</a>( )</code>
+		<code><a href="source-class-Nymph.EntityInterface.html#46-52" title="Go to source code">clearCache</a>( )</code>
 
 		<div class="description short">
 			<p>Clear the cache of referenced entities.</p>
@@ -290,7 +320,7 @@ accessed, it will be retrieved from the entity manager.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getData">#</a>
-		<code><a href="source-class-Nymph.EntityInterface.html#44-53" title="Go to source code">getData</a>( )</code>
+		<code><a href="source-class-Nymph.EntityInterface.html#53-62" title="Go to source code">getData</a>( )</code>
 
 		<div class="description short">
 			<p>Used to retrieve the data array.</p>
@@ -327,7 +357,7 @@ into storage.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getSData">#</a>
-		<code><a href="source-class-Nymph.EntityInterface.html#54-68" title="Go to source code">getSData</a>( )</code>
+		<code><a href="source-class-Nymph.EntityInterface.html#63-77" title="Go to source code">getSData</a>( )</code>
 
 		<div class="description short">
 			<p>Used to retrieve the serialized data array.</p>
@@ -369,7 +399,7 @@ that hasn't been requested yet.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_hasTag">#</a>
-		<code><a href="source-class-Nymph.EntityInterface.html#69-75" title="Go to source code">hasTag</a>( )</code>
+		<code><a href="source-class-Nymph.EntityInterface.html#78-84" title="Go to source code">hasTag</a>( )</code>
 
 		<div class="description short">
 			<p>Check that the entity has all of the given tags.</p>
@@ -403,7 +433,7 @@ that hasn't been requested yet.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_putData">#</a>
-		<code><a href="source-class-Nymph.EntityInterface.html#76-88" title="Go to source code">putData</a>( <span>array <var>$data</var></span>, <span>array <var>$sdata</var> = []</span> )</code>
+		<code><a href="source-class-Nymph.EntityInterface.html#85-97" title="Go to source code">putData</a>( <span>array <var>$data</var></span>, <span>array <var>$sdata</var> = []</span> )</code>
 
 		<div class="description short">
 			<p>Used to set the data array.</p>
@@ -446,7 +476,7 @@ been requested yet.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_removeTag">#</a>
-		<code><a href="source-class-Nymph.EntityInterface.html#89-94" title="Go to source code">removeTag</a>( )</code>
+		<code><a href="source-class-Nymph.EntityInterface.html#98-103" title="Go to source code">removeTag</a>( )</code>
 
 		<div class="description short">
 			<p>Remove one or more tags.</p>
@@ -476,7 +506,7 @@ been requested yet.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_toReference">#</a>
-		<code><a href="source-class-Nymph.EntityInterface.html#95-100" title="Go to source code">toReference</a>( )</code>
+		<code><a href="source-class-Nymph.EntityInterface.html#104-110" title="Go to source code">toReference</a>( )</code>
 
 		<div class="description short">
 			<p>Return a Nymph Entity Reference for this entity.</p>
@@ -489,7 +519,8 @@ been requested yet.</p>
 
 				<h4>Returns</h4>
 				<div class="list">
-					array|<code><a href="class-Nymph.Entity.html">Nymph\Entity</a></code><br>A Nymph Entity Reference array, or the entity if it is not saved yet.
+					array|<code><a href="class-Nymph.Entity.html">Nymph\Entity</a></code><br><p>A Nymph Entity Reference array, or the entity
+                            if it is not saved yet.</p>
 				</div>
 
 
@@ -546,7 +577,7 @@ jsonSerialize()
 		</code></td>
 
 		<td class="name">
-				<a href="source-class-Nymph.EntityInterface.html#16" title="Go to source code"><var>$guid</var></a>
+				<a href="source-class-Nymph.EntityInterface.html#17" title="Go to source code"><var>$guid</var></a>
 
 			<div class="description short">
 				<p>The GUID of the entity.</p>
@@ -565,29 +596,10 @@ jsonSerialize()
 		</code></td>
 
 		<td class="name">
-				<a href="source-class-Nymph.EntityInterface.html#17" title="Go to source code"><var>$tags</var></a>
+				<a href="source-class-Nymph.EntityInterface.html#18" title="Go to source code"><var>$tags</var></a>
 
 			<div class="description short">
 				<p>Array of the entity's tags.</p>
-			</div>
-
-			<div class="description detailed hidden">
-				
-
-			</div>
-		</td>
-	</tr>
-	<tr data-order="_nUseSkipAC" id="m$_nUseSkipAC">
-		<td class="attributes"><code>
-			public  
-			boolean
-		</code></td>
-
-		<td class="name">
-				<a href="source-class-Nymph.EntityInterface.html#18" title="Go to source code"><var>$_nUseSkipAC</var></a>
-
-			<div class="description short">
-				<p>Whether to use the skip_ac option when retrieving referenced entities.</p>
 			</div>
 
 			<div class="description detailed hidden">
