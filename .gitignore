@@ -1,8 +1,8 @@
 bower_components
 node_modules
 vendor
-client
-examples
-pubsub
-server
+/client
+/examples
+/pubsub
+/server
 .idea
