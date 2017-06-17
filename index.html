@@ -66,7 +66,7 @@
 						<tbody>
 							<tr style="border-bottom: 1px solid #333;">
 								<td style="text-align: left;"><i class="fa fa-check-square-o"></i> ToDo App</td>
-								<td><i class="fa fa-arrow-circle-right"></i> <a href="http://nymph-demo.herokuapp.com/examples/todo/" target="_blank">See the Demo</a></td>
+								<td><i class="fa fa-arrow-circle-right"></i> <a href="http://nymph-demo.herokuapp.com/examples/todo/svelte/" target="_blank">See the Demo</a></td>
 								<td><i class="fa fa-code"></i> <a href="https://github.com/sciactive/nymph-examples/tree/master/examples/todo" target="_blank">See the Source</a></td>
 							</tr>
 							<tr style="border-bottom: 1px solid #333;">
@@ -92,7 +92,7 @@
 								<header>
 									<h3>Speedy</h3>
 								</header>
-								<p>Nymph is lean and fast. Not just in processing, but Nymph can be used to prototype in no time at all.</p>
+								<p>Nymph is lean and fast. Not just in processing, but Nymph can be used for rapid prototyping.</p>
 							</section>
 						</div>
 						<div class="4u">
@@ -101,7 +101,7 @@
 								<header>
 									<h3>Open Source</h3>
 								</header>
-								<p>Nymph is licensed under the Lesser General Public License. It can be used in open source <em>and</em> proprietary projects.</p>
+								<p>Nymph is licensed under the Apache-2 license.</p>
 								<p>&nbsp;</p>
 								<p><a href="https://github.com/sciactive/nymph" class="button scrolly">Nymph on GitHub</a></p>
 							</section>
@@ -117,7 +117,7 @@
 								<header>
 									<h3>Reactive</h3>
 								</header>
-								<p>Nymph's publish/subscribe server makes it easy to build <strong>collaborative</strong> apps with many concurrent users.</p>
+								<p>Nymph's publish/subscribe server makes it easy to build <strong>collaborative</strong> apps.</p>
 							</section>
 						</div>
 					</div>
@@ -130,30 +130,11 @@
 			<header>
 				<div class="container">
 					<h2>Why Nymph</h2>
-					<p>Why would you want to use Nymph when it's so different than what you've been doing for years?</p>
+					<p>Why use Nymph when you can just use plain old SQL?</p>
 				</div>
 			</header>
 			<div class="content dark style2">
 				<div class="container">
-					<div class="row">
-						<div class="8u">
-							<p>The pain of binding your models to your HTML was relieved with frontend libraries like Angular. But
-								developers so often still have to go through the pain of creating many endpoints to communicate
-								your actual models to the frontend. Then there's the additional code required to query your
-								database, translate the results, and relay that to the frontend. Where Angular left off, Nymph
-								comes in. Nymph provides the models to build complex MVC applications simply. Querying logic can
-								be entirely (or partially) handled on the frontend, with never a single line of SQL. This means
-								less context switching between frontend and backend, and far less time to develop complex,
-								functional apps. Unlike most other ORMs, Nymph is designed to let you put your business logic
-								wherever you see fit.</p>
-						</div>
-						<div class="4u">
-							<p>Nymph also frees you from lots of database maintenance. There's no need to run a migration script
-								every time you add a property to one of your objects. Nymph is flexible and automatic with object
-								data. Never switching out of an Object Oriented context makes coding a lot easier and a lot more
-								fun. Less time spent crafting databases means more time spent building useful applications.</p>
-						</div>
-					</div>
 					<div class="row" id="better-than-sql">
 						<div class="12u">
 							<p>I like to think of <a href="https://github.com/sciactive/nymph/wiki/Entity-Querying">Nymph's query language</a> as a BTSQL (Better Than SQL) language, but you can decide for yourself:</p>
@@ -175,85 +156,29 @@
 			</div>
 		</section>
 
-		<!-- Third -->
-		<section id="third" class="main">
-			<header>
-				<div class="container">
-					<h2>Feature Packed in a Small Size</h2>
-					<p>At less than 250KB, Nymph provides a ton of features, giving you
-						<a href="https://github.com/sciactive/nymph/wiki/Entity-Querying">powerful queries</a>
-						and fast data access.</p>
-				</div>
-			</header>
-			<div class="content dark style3">
-				<div class="container">
-					<div class="row">
-						<div class="4u">
-							<section>
-								<h3>Out of the box features are best in class, at a fraction of the size of other ORMs</h3>
-								<ul class="default">
-									<li>PubSub makes real time, collaborative apps easy.</li>
-									<li>On demand loading keeps database queries to a minimum.</li>
-									<li>Easy, object oriented query syntax.</li>
-									<li>Equivalent PHP and JavaScript API for backend and frontend.</li>
-									<li>RequireJS and RequirePHP for dependency injection and service location.</li>
-									<li>Horizontally scalable, for enormous databases.</li>
-								</ul>
-								<footer>
-									<a href="https://github.com/sciactive/nymph/wiki" class="button scrolly">Visit the Nymph Wiki</a>
-								</footer>
-							</section>
-						</div>
-						<div class="8u">
-							<div class="row no-collapse">
-								<!-- http://www.publicdomainpictures.net/view-image.php?image=72981&picture=hands-holding-jigsaw -->
-								<div class="6u"><a class="image full"><img src="images/pic01.jpg" alt="" /></a></div>
-								<div class="6u"><a class="image full"><img src="images/pic04.jpg" alt="" /></a></div>
-							</div>
-							<div class="row no-collapse">
-								<div class="6u"><a class="image full"><img src="images/pic02.jpg" alt="" /></a></div>
-								<div class="6u"><a class="image full"><img src="images/pic03.jpg" alt="" /></a></div>
-							</div>
-							<div class="row no-collapse">
-								<div class="6u"><a class="image full"><img src="images/pic05.jpg" alt="" /></a></div>
-								<div class="6u"><a class="image full"><img src="images/pic06.jpg" alt="" /></a></div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-
 		<!-- Fourth -->
 		<section id="fourth" class="main">
 			<header>
 				<div class="container">
 					<h2>Easy to Integrate</h2>
-					<p>Nymph is very easy to integrate into Angular apps. The Angular demo Todo app has been recreated and improved
-						to demonstrate how easy it is. It's located in the "examples" directory of the repository.</p>
+					<p>Nymph is very easy to integrate into Angular, React, Ember, Svelte, and more. Check out the demos.</p>
 				</div>
 			</header>
 			<div class="content dark style1">
 				<div class="container">
 					<div class="row">
-						<div class="4u">
-							<h3>Angular and Nymph, a Love Story</h3>
-							<p>Nymph's easy querying on the client end makes it perfect for building complex Angular apps. And
-								because you don't ever have to write any SQL, almost all of your logic code can be on the client
-								side. That means fewer round trips, fewer page loads, more responsive interfaces, and happier
-								customers.</p>
+						<div class="6u">
+							<h3>[your framework of choice] and Nymph, a Love Story</h3>
+							<p>Nymph's easy querying on the client makes it perfect for building complex apps with a frontend framework.
+								Because you don't have to write SQL, almost all of your logic can be on the client side, if you prefer.
+								That means fewer round trips, more responsive interfaces, and happier customers.</p>
 						</div>
-						<div class="4u">
+						<div class="6u">
 							<p>Creating a new type of entity is simple in Nymph. You can code your logic on the PHP or JS side,
-								and access it all the same. With the power of Nymph, you can code full Angular apps in half the
-								time it takes with a regular framework. And if you're already invested in a framework, Nymph's
-								REST endpoint library makes it a breeze to integrate anywhere in your app.</p>
-						</div>
-						<div class="4u">
-							<p>Angular isn't the only library perfectly matched with Nymph. Nymph will integrate cleanly into most
-								front end libraries, and all PHP backend frameworks. Nymph is designed to be flexible, and fit any
-								sort of problem at hand. If you need any help integrating Nymph, you can contact the developers,
-								whose info is located in the readme.</p>
+								and access it all the same. If you're already invested in a data store, Nymph's REST endpoint
+								library makes it easy to integrate anywhere in your app.</p>
+							<p>It's not just for frontend. Nymph will integrate with all PHP backend frameworks. Nymph is designed
+								to be flexible.</p>
 						</div>
 					</div>
 				</div>
@@ -268,7 +193,7 @@
 				<li><a href="https://github.com/sciactive" class="fa fa-github solo"><span>GitHub</span></a></li>
 			</ul>
 			<div class="content">
-				Nymph is a SciActive project.
+				Nymph is a SciActive project by Hunter Perrin.
 			</div>
 			<div class="copyright">
 				<ul class="menu">
